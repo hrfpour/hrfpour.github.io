@@ -42,15 +42,15 @@ export const PROFILE = {
   domain: "farhadipour.com",
   roles: {
     en: ["Data Scientist", "M.Sc. Data Science Student", "ML Researcher"],
-    fa: ["دانشمند داده", "دانشجوی ارشد علم داده", "پژوهشگر یادگیری ماشین"],
+    fa: ["دانشمند داده‌ها", "دانشجوی ارشد علم داده‌ها", "پژوهشگر یادگیری ماشین"],
   },
   bioShort: {
     en: "M.Sc. Data Science student & B.Sc. Statistics graduate — combining statistical rigor with machine learning, from Bayesian reliability to spatio-temporal graph neural networks.",
-    fa: "دانشجوی کارشناسی ارشد علم داده و فارغ‌التحصیل آمار — پیوند دقت آماری با یادگیری ماشین؛ از قابلیت اطمینان بیزی تا شبکه‌های عصبی گرافی فضایی-زمانی.",
+    fa: "دانشجوی کارشناسی ارشد علم داده‌ها و فارغ‌التحصیل آمار — پیوند دقت آماری با یادگیری ماشین؛ از قابلیت اطمینان بیزی تا شبکه‌های عصبی گرافی فضایی-زمانی.",
   },
   bioLong: {
     en: "I am an M.Sc. Data Science student and B.Sc. Statistics graduate (Allameh Tabataba'i University), relying on statistical inference and predictive modeling to solve data-driven problems. I have hands-on research experience in advanced statistical analysis, machine learning, and deep learning — and I am comfortable running the full data-analysis cycle, from handling missing data to feature engineering, training, evaluation, and model interpretation, with an evidence-based and methodologically rigorous mindset.\n\nMy thesis focuses on enhancing reliability in traffic forecasting by integrating spatio-temporal graph neural networks with Bayesian approaches. Alongside research, I have served as a teaching assistant for Programming with R, and I enjoy collaborating on projects that extract valid insight from data, enable sharper decisions, and create measurable value.",
-    fa: "دانشجوی کارشناسی ارشد علم داده و کارشناس آمار از دانشگاه علامه طباطبائی هستم؛ متکی بر روش‌های استنباط آماری و مدل‌سازی پیش‌بینی برای حل مسائل داده‌محور. تجربهٔ عملی و پژوهشی در تحلیل‌های آماری پیشرفته، یادگیری ماشین و یادگیری عمیق دارم و در طراحی و پیاده‌سازی چرخهٔ کامل تحلیل داده — از مدیریت داده‌های گمشده تا مهندسی ویژگی، آموزش، ارزیابی و تفسیر مدل‌ها — با رویکردی مبتنی بر شواهد و دقت روش‌شناختی توانمندم.\n\nپایان‌نامهٔ من دربارهٔ ارزیابی و بهبود قابلیت اطمینان در پیش‌بینی ترافیک با تلفیق شبکه‌های عصبی گرافی فضایی-زمانی و رویکرد بیزی است. در کنار پژوهش، دستیار آموزشی درس برنامه‌نویسی با R بوده‌ام و علاقه‌مندم در پروژه‌هایی همکاری کنم که بر استخراج بینش معتبر از داده‌ها، تصمیم‌گیری دقیق‌تر و خلق ارزش قابل سنجش تمرکز دارند.",
+    fa: "دانشجوی کارشناسی ارشد علم داده و کارشناس آمار از دانشگاه علامه طباطبائی هستم؛ متکی بر روش‌های استنباط آماری و مدل‌سازی پیش‌بینی برای حل مسائل داده‌ها‌محور. تجربهٔ عملی و پژوهشی در تحلیل‌های آماری پیشرفته، یادگیری ماشین و یادگیری عمیق دارم و در طراحی و پیاده‌سازی چرخهٔ کامل تحلیل داده — از مدیریت داده‌های گمشده تا مهندسی ویژگی، آموزش، ارزیابی و تفسیر مدل‌ها — با رویکردی مبتنی بر شواهد و دقت روش‌شناختی توانمندم.\n\nپایان‌نامهٔ من دربارهٔ ارزیابی و بهبود قابلیت اطمینان در پیش‌بینی ترافیک با تلفیق شبکه‌های عصبی گرافی فضایی-زمانی و رویکرد بیزی است. در کنار پژوهش، دستیار آموزشی درس برنامه‌نویسی با R بوده‌ام و علاقه‌مندم در پروژه‌هایی همکاری کنم که بر استخراج بینش معتبر از داده‌ها، تصمیم‌گیری دقیق‌تر و خلق ارزش قابل سنجش تمرکز دارند.",
   },
   location: { en: "Tehran, Iran", fa: "تهران، ایران" },
 };
@@ -90,7 +90,7 @@ export const STRINGS = {
   "about.title": { en: "A little bit about who I am", fa: "کمی بیشتر با من آشنا شوید" },
   "about.subtitle": {
     en: "Statistician by training, data scientist by craft, and a teacher at heart.",
-    fa: "آماردان در تحصیل، دانشمند داده در کار، و دلبستهٔ تدریس.",
+    fa: "آماردان در تحصیل، دانشمند داده‌ها در کار، و دلبستهٔ تدریس.",
   },
   "research.kicker": { en: "Research", fa: "پژوهش" },
   "research.title": { en: "Research interests", fa: "حوزه‌های پژوهشی" },
@@ -120,7 +120,7 @@ export const STRINGS = {
   "blog.title": { en: "Latest writing & notes", fa: "آخرین نوشته‌ها و یادداشت‌ها" },
   "blog.subtitle": {
     en: "Short articles, tutorials, and notes on data science and ML.",
-    fa: "مقالات کوتاه، آموزش‌ها و یادداشت‌هایی درباره علم داده و یادگیری ماشین.",
+    fa: "مقالات کوتاه، آموزش‌ها و یادداشت‌هایی درباره علم داده‌ها و یادگیری ماشین.",
   },
   "contact.kicker": { en: "Contact", fa: "تماس" },
   "contact.title": { en: "Let's work together", fa: "با هم کار کنیم" },
@@ -135,7 +135,7 @@ export const STRINGS = {
   "about.factDegree": { en: "Degree", fa: "مدرک" },
   "about.factDegreeValue": {
     en: "M.Sc. in Data Science (in progress)",
-    fa: "کارشناسی ارشد علم داده (در حال تحصیل)",
+    fa: "کارشناسی ارشد علم داده‌ها (در حال تحصیل)",
   },
   "about.factBirth": { en: "Birthplace", fa: "زادگاه" },
   "about.factBirthValue": { en: "Abhar, Zanjan, Iran", fa: "ابهر، زنجان، ایران" },
@@ -151,7 +151,7 @@ export const STRINGS = {
   "projects.cat.ml": { en: "Machine Learning", fa: "یادگیری ماشین" },
   "projects.cat.dl": { en: "Deep Learning", fa: "یادگیری عمیق" },
   "projects.cat.ts": { en: "Time Series", fa: "سری زمانی" },
-  "projects.cat.db": { en: "Databases", fa: "پایگاه داده" },
+  "projects.cat.db": { en: "Databases", fa: "پایگاه داده‌ها" },
   "projects.supervisor": { en: "Supervised by", fa: "زیر نظر" },
   "projects.featured": { en: "Featured", fa: "ویژه" },
 
@@ -310,10 +310,10 @@ export const PROJECTS: Project[] = [
   },
   {
     id: "prj-db",
-    title: { en: "Hybrid SQL + NoSQL Database Architecture", fa: "معماری ترکیبی پایگاه داده (SQL و NoSQL)" },
+    title: { en: "Hybrid SQL + NoSQL Database Architecture", fa: "معماری ترکیبی پایگاه داده‌ها (SQL و NoSQL)" },
     description: {
       en: "Designed and implemented a hybrid relational/document database architecture — mapping each workload to the right store and benchmarking cross-store queries for a realistic application scenario.",
-      fa: "طراحی و پیاده‌سازی معماری ترکیبی رابطه‌ای/سندی پایگاه داده — تناسب هر بار کاری با فروشگاه مناسب و محک‌زدن کوئری‌های بین‌فروشگاهی برای یک سناریوی واقعی.",
+      fa: "طراحی و پیاده‌سازی معماری ترکیبی رابطه‌ای/سندی پایگاه داده‌ها — تناسب هر بار کاری با فروشگاه مناسب و محک‌زدن کوئری‌های بین‌فروشگاهی برای یک سناریوی واقعی.",
     },
     tech: ["SQL", "MongoDB", "Schema Design", "Query Optimization"],
     category: "db",
@@ -323,7 +323,7 @@ export const PROJECTS: Project[] = [
   },
   {
     id: "prj-cluster",
-    title: { en: "Comprehensive Data Analysis: Clustering & Classification", fa: "تحلیل جامع داده با خوشه‌بندی و رده‌بندی" },
+    title: { en: "Comprehensive Data Analysis: Clustering & Classification", fa: "تحلیل جامع داده‌ها با خوشه‌بندی و رده‌بندی" },
     description: {
       en: "Full analytical cycle on a real dataset — preprocessing and missing-data handling, exploratory analysis, unsupervised segmentation, and supervised classification with model comparison.",
       fa: "چرخهٔ کامل تحلیل روی دادهٔ واقعی — پیش‌پردازش و مدیریت داده‌های گمشده، کاوش اولیه، قطعه‌بندی بدون‌نظارت و رده‌بندی نظارت‌شده با مقایسهٔ مدل‌ها.",
@@ -389,7 +389,7 @@ export interface SkillGroup {
 export const SKILL_GROUPS: SkillGroup[] = [
   {
     icon: "code",
-    title: { en: "Programming & Databases", fa: "برنامه‌نویسی و پایگاه داده" },
+    title: { en: "Programming & Databases", fa: "برنامه‌نویسی و پایگاه داده‌ها" },
     skills: ["Python (Pandas, NumPy)", "R", "SQL", "SPSS", "Git & GitHub", "Jupyter"],
   },
   {
@@ -428,7 +428,7 @@ export interface EducationItem {
 
 export const EDUCATION: EducationItem[] = [
   {
-    degree: { en: "M.Sc. in Data Science", fa: "کارشناسی ارشد علم داده" },
+    degree: { en: "M.Sc. in Data Science", fa: "کارشناسی ارشد علم داده‌ها" },
     school: { en: "Allameh Tabataba'i University (ATU), Tehran", fa: "دانشگاه علامه طباطبائی، تهران" },
     period: { en: "Oct 2024 — Present", fa: "مهر ۱۴۰۳ — اکنون" },
     current: true,

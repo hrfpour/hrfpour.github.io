@@ -16,7 +16,7 @@ export function About() {
   const facts = [
     { icon: Sparkles, label: t("about.factName"), value: lang === "fa" ? PROFILE.nameFa : PROFILE.nameEn },
     { icon: GraduationCap, label: t("about.factDegree"), value: t("about.factDegreeValue") },
-    { icon: MapPin, label: t("about.factField"), value: t("about.factFieldValue") },
+    { icon: MapPin, label: t("about.factBirth"), value: t("about.factBirthValue") },
     { icon: Languages, label: t("about.factLang"), value: t("about.factLangValue") },
   ];
 

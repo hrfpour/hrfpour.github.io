@@ -23,6 +23,7 @@ export function Contact() {
     const data = new FormData(form);
     const name = String(data.get("name") ?? "").trim();
     const email = String(data.get("email") ?? "").trim();
+    const subject = String(data.get("subject") ?? "").trim();
     const message = String(data.get("message") ?? "").trim();
 
     if (!name || !email || !message) {
@@ -30,15 +31,20 @@ export function Contact() {
       return;
     }
 
+    // Static-site friendly: compose the message into the visitor's email client.
+    const finalSubject = subject || `Website contact — ${name}`;
+    const body = `${message}\n\n———\n${name}\n${email}`;
+    const mailto = `mailto:${PROFILE.email}?subject=${encodeURIComponent(finalSubject)}&body=${encodeURIComponent(body)}`;
+
     setSending(true);
-    // Demo mode — a real backend endpoint will be wired later.
+    window.location.href = mailto;
+    toast.success(t("contact.sentTitle"), {
+      description: t("contact.sentDesc"),
+    });
     setTimeout(() => {
       setSending(false);
       form.reset();
-      toast.success(t("contact.sentTitle"), {
-        description: t("contact.sentDesc"),
-      });
-    }, 900);
+    }, 1200);
   };
 
   const infoCards = [

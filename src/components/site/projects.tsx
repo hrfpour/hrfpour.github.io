@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Github, ExternalLink, LayoutDashboard, Radar, Brain, ShieldCheck, Database, Globe, Star } from "lucide-react";
+import { Github, ExternalLink, LayoutDashboard, Brain, ShieldCheck, Database, LineChart, Dna, Star } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -18,17 +18,17 @@ import { Reveal } from "./reveal";
 const CATEGORY_KEYS: Record<ProjectCategory, StringKey> = {
   ml: "projects.cat.ml",
   dl: "projects.cat.dl",
-  viz: "projects.cat.viz",
-  web: "projects.cat.web",
+  ts: "projects.cat.ts",
+  db: "projects.cat.db",
 };
 
 const PROJECT_ICONS = {
   dashboard: LayoutDashboard,
-  radar: Radar,
   brain: Brain,
   shield: ShieldCheck,
   database: Database,
-  globe: Globe,
+  chart: LineChart,
+  dna: Dna,
 } as const;
 
 type Filter = "all" | ProjectCategory;
@@ -53,13 +53,16 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
                   {t("projects.featured")}
                 </Badge>
               )}
-              <span className="font-mono text-xs text-muted-foreground">{project.year}</span>
+              <span className="font-mono text-xs text-muted-foreground">{tr(project.year)}</span>
             </div>
           </div>
 
           <h3 className="font-display text-lg font-semibold leading-snug text-foreground transition-colors group-hover:text-primary">
             {tr(project.title)}
           </h3>
+          <p className="mt-1 text-[11px] font-medium text-primary/80">
+            {t("projects.supervisor")} · {tr(project.supervisor)}
+          </p>
           <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">
             {tr(project.description)}
           </p>

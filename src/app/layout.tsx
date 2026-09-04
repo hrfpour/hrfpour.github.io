@@ -31,14 +31,17 @@ export const metadata: Metadata = {
     template: "%s | Hamidreza Farhadipour",
   },
   description:
-    "Personal academic website of Hamidreza Farhadipour — Data Scientist and M.Sc. student in Computer Science. Research on network traffic analysis, time-series modeling, and anomaly detection. Projects, publications, and notes.",
+    "Personal academic website of Hamidreza Farhadipour — M.Sc. Data Science student and B.Sc. Statistics graduate at Allameh Tabataba'i University. Thesis on spatio-temporal graph neural networks and Bayesian approaches for reliable traffic forecasting. Projects, skills, and notes.",
   keywords: [
     "Hamidreza Farhadipour",
     "Data Science",
+    "Statistics",
     "Machine Learning",
-    "Anomaly Detection",
-    "Network Traffic Analysis",
+    "Graph Neural Networks",
+    "Bayesian Methods",
+    "Traffic Forecasting",
     "Time Series",
+    "Allameh Tabataba'i University",
     "Research",
     "Portfolio",
   ],
@@ -47,7 +50,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Hamidreza Farhadipour | Data Scientist & ML Researcher",
     description:
-      "Research, projects, and notes on data science, network traffic analysis, and anomaly detection.",
+      "M.Sc. Data Science student & B.Sc. Statistics graduate — research on spatio-temporal graph neural networks and Bayesian approaches for reliable traffic forecasting.",
     url: "https://farhadipour.com",
     siteName: "farhadipour.com",
     type: "website",
@@ -58,7 +61,7 @@ export const metadata: Metadata = {
     card: "summary",
     title: "Hamidreza Farhadipour | Data Scientist & ML Researcher",
     description:
-      "Research, projects, and notes on data science, network traffic analysis, and anomaly detection.",
+      "M.Sc. Data Science student & B.Sc. Statistics graduate — spatio-temporal GNNs and Bayesian approaches for traffic forecasting.",
   },
 };
 

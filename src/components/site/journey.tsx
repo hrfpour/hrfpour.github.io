@@ -163,7 +163,7 @@ export function Journey() {
                     {tr(honor.title)}
                   </span>
                   <span className="mt-0.5 block text-xs text-muted-foreground">
-                    {tr(honor.issuer)} · {honor.year}
+                    {tr(honor.issuer)}{honor.year ? ` · ${honor.year}` : ""}
                   </span>
                 </span>
               </div>

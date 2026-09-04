@@ -2,9 +2,8 @@
  * Central bilingual content store for farhadipour.com
  * All user-facing text lives here (English / Persian).
  *
- * NOTE: Academic details marked as placeholder (universities, publications,
- * dates, stats) are SAMPLE data for the template preview — replace them with
- * real information in this single file.
+ * Real data source: Hamidreza Farhadipour's CV (2025-2026).
+ * Update this single file to change any site text.
  */
 
 export type Lang = "en" | "fa";
@@ -20,7 +19,6 @@ export const NAV_ITEMS: { id: string; label: LT }[] = [
   { id: "home", label: { en: "Home", fa: "خانه" } },
   { id: "about", label: { en: "About", fa: "درباره من" } },
   { id: "research", label: { en: "Research", fa: "پژوهش" } },
-  { id: "publications", label: { en: "Publications", fa: "مقالات" } },
   { id: "projects", label: { en: "Projects", fa: "پروژه‌ها" } },
   { id: "skills", label: { en: "Skills", fa: "مهارت‌ها" } },
   { id: "journey", label: { en: "Journey", fa: "مسیر من" } },
@@ -37,30 +35,22 @@ export const PROFILE = {
   nameFa: "حمیدرضا فرهادی‌پور",
   avatar: "/images/profile.jpg",
   avatarSmall: "/images/profile-sm.jpg",
-  email: "contact@farhadipour.com", // TODO: replace with real email
+  email: "hrfpour@gmail.com",
   github: "https://github.com/hrfpour",
-  linkedin: "https://www.linkedin.com/in/hamidreza-farhadipour", // TODO: verify
-  scholar: "https://scholar.google.com", // TODO: add real scholar link
+  linkedin: "https://www.linkedin.com/in/hamidreza-farhadipour-897aba284",
+  scholar: "https://scholar.google.com/citations?user=ZeLKEY4AAAAJ&hl=en",
   domain: "farhadipour.com",
   roles: {
-    en: [
-      "Data Scientist",
-      "M.Sc. Student in Computer Science",
-      "Machine Learning Researcher",
-    ],
-    fa: [
-      "دانشمند داده",
-      "دانشجوی کارشناسی ارشد علوم کامپیوتر",
-      "پژوهشگر یادگیری ماشین",
-    ],
+    en: ["Data Scientist", "M.Sc. Data Science Student", "ML Researcher"],
+    fa: ["دانشمند داده", "دانشجوی ارشد علم داده", "پژوهشگر یادگیری ماشین"],
   },
   bioShort: {
-    en: "I turn complex, high-volume data into clear, actionable insight — with a research focus on network traffic analysis, time-series modeling and anomaly detection.",
-    fa: "داده‌های پیچیده و حجیم را به بینش‌های شفاف و کاربردی تبدیل می‌کنم؛ با تمرکز پژوهشی بر تحلیل ترافیک شبکه، مدل‌سازی سری‌های زمانی و تشخیص ناهنجاری.",
+    en: "M.Sc. Data Science student & B.Sc. Statistics graduate — combining statistical rigor with machine learning, from Bayesian reliability to spatio-temporal graph neural networks.",
+    fa: "دانشجوی کارشناسی ارشد علم داده و فارغ‌التحصیل آمار — پیوند دقت آماری با یادگیری ماشین؛ از قابلیت اطمینان بیزی تا شبکه‌های عصبی گرافی فضایی-زمانی.",
   },
   bioLong: {
-    en: "I am a Data Scientist and M.Sc. student in Computer Science with a strong passion for extracting meaningful patterns from complex datasets. My work revolves around network traffic analysis, time-series modeling, and anomaly detection — building systems that not only predict accurately, but can also be interpreted and trusted.\n\nI believe clean, interpretable visualizations are the shortest path between raw data and real-world decisions. Whether I am designing interactive dashboards, benchmarking statistical methods against deep learning models, or teaching fellow students, my goal is the same: bridge the gap between raw data and actionable insight.",
-    fa: "من دانشجوِ کارشناسی ارشد علوم کامپیوتر و دانشمند داده هستم و شوق اصلی‌ام استخراج الگوهای معنادار از داده‌های پیچیده است. کارهایم حول محور تحلیل ترافیک شبکه، مدل‌سازی سری‌های زمانی و تشخیص ناهنجاری می‌چرخد؛ یعنی ساخت سامانه‌هایی که علاوه بر دقت بالا، قابل تفسیر و قابل اعتماد هم باشند.\n\nباور دارم بصری‌سازی‌های تمیز و قابل فهم، کوتاه‌ترین مسیر میان داده‌ی خام و تصمیم‌های واقعی هستند. چه در حال طراحی داشبوردهای تعاملی باشم، چه مقایسه روش‌های آماری با مدل‌های یادگیری عمیق، یا تدریس به هم‌دانشگاهی‌ها، هدفم یکی است: پر کردن شکاف میان داده خام و بینش کاربردی.",
+    en: "I am an M.Sc. Data Science student and B.Sc. Statistics graduate (Allameh Tabataba'i University), relying on statistical inference and predictive modeling to solve data-driven problems. I have hands-on research experience in advanced statistical analysis, machine learning, and deep learning — and I am comfortable running the full data-analysis cycle, from handling missing data to feature engineering, training, evaluation, and model interpretation, with an evidence-based and methodologically rigorous mindset.\n\nMy thesis focuses on enhancing reliability in traffic forecasting by integrating spatio-temporal graph neural networks with Bayesian approaches. Alongside research, I have served as a teaching assistant for Programming with R, and I enjoy collaborating on projects that extract valid insight from data, enable sharper decisions, and create measurable value.",
+    fa: "دانشجوی کارشناسی ارشد علم داده و کارشناس آمار از دانشگاه علامه طباطبائی هستم؛ متکی بر روش‌های استنباط آماری و مدل‌سازی پیش‌بینی برای حل مسائل داده‌محور. تجربهٔ عملی و پژوهشی در تحلیل‌های آماری پیشرفته، یادگیری ماشین و یادگیری عمیق دارم و در طراحی و پیاده‌سازی چرخهٔ کامل تحلیل داده — از مدیریت داده‌های گمشده تا مهندسی ویژگی، آموزش، ارزیابی و تفسیر مدل‌ها — با رویکردی مبتنی بر شواهد و دقت روش‌شناختی توانمندم.\n\nپایان‌نامهٔ من دربارهٔ ارزیابی و بهبود قابلیت اطمینان در پیش‌بینی ترافیک با تلفیق شبکه‌های عصبی گرافی فضایی-زمانی و رویکرد بیزی است. در کنار پژوهش، دستیار آموزشی درس برنامه‌نویسی با R بوده‌ام و علاقه‌مندم در پروژه‌هایی همکاری کنم که بر استخراج بینش معتبر از داده‌ها، تصمیم‌گیری دقیق‌تر و خلق ارزش قابل سنجش تمرکز دارند.",
   },
   location: { en: "Tehran, Iran", fa: "تهران، ایران" },
 };
@@ -75,7 +65,6 @@ export const STRINGS = {
   "nav.home": { en: "Home", fa: "خانه" },
   "nav.about": { en: "About", fa: "درباره من" },
   "nav.research": { en: "Research", fa: "پژوهش" },
-  "nav.publications": { en: "Publications", fa: "مقالات" },
   "nav.projects": { en: "Projects", fa: "پروژه‌ها" },
   "nav.skills": { en: "Skills", fa: "مهارت‌ها" },
   "nav.journey": { en: "Journey", fa: "مسیر من" },
@@ -90,18 +79,18 @@ export const STRINGS = {
   "hero.ctaResearch": { en: "Explore my research", fa: "پژوهش‌های من" },
   "hero.ctaCv": { en: "Download CV", fa: "دانلود رزومه" },
   "hero.ctaContact": { en: "Get in touch", fa: "ارتباط با من" },
-  "stat.publications": { en: "Publications", fa: "مقاله علمی" },
-  "stat.projects": { en: "Research Projects", fa: "پروژه پژوهشی" },
-  "stat.awards": { en: "Awards & Honors", fa: "جایزه و افتخار" },
-  "stat.teaching": { en: "TA Courses", fa: "دوره تدریس‌شده" },
+  "stat.gpa": { en: "M.Sc. GPA — out of 20", fa: "معدل کارشناسی ارشد — از ۲۰" },
+  "stat.projects": { en: "Academic Projects", fa: "پروژهٔ دانشگاهی" },
+  "stat.certificates": { en: "Certificates", fa: "گواهینامهٔ حرفه‌ای" },
+  "stat.teaching": { en: "TA Course", fa: "دورهٔ دستیاری آموزشی" },
   "hero.scroll": { en: "Scroll to explore", fa: "برای کاوش اسکرول کنید" },
 
   /* Section headings */
   "about.kicker": { en: "About me", fa: "درباره من" },
   "about.title": { en: "A little bit about who I am", fa: "کمی بیشتر با من آشنا شوید" },
   "about.subtitle": {
-    en: "Data scientist by craft, researcher by curiosity, and teacher by passion.",
-    fa: "در حرفه، دانشمند داده؛ در کنجکاوی، پژوهشگر؛ و در عشق، معلم.",
+    en: "Statistician by training, data scientist by craft, and a teacher at heart.",
+    fa: "آماردان در تحصیل، دانشمند داده در کار، و دلبستهٔ تدریس.",
   },
   "research.kicker": { en: "Research", fa: "پژوهش" },
   "research.title": { en: "Research interests", fa: "حوزه‌های پژوهشی" },
@@ -109,17 +98,11 @@ export const STRINGS = {
     en: "Topics I actively explore, read about, and build on.",
     fa: "موضوعاتی که فعالانه درباره‌شان پژوهش می‌کنم و روی آن‌ها می‌سازم.",
   },
-  "publications.kicker": { en: "Publications", fa: "انتشارات" },
-  "publications.title": { en: "Selected publications & manuscripts", fa: "مقالات منتخب و دست‌نوشته‌ها" },
-  "publications.subtitle": {
-    en: "Peer-reviewed papers, preprints, and work under review.",
-    fa: "مقالات داوری‌شده، پیش‌چاپ‌ها و مقالات در حال داوری.",
-  },
   "projects.kicker": { en: "Projects", fa: "پروژه‌ها" },
   "projects.title": { en: "Things I have designed & built", fa: "چیزهایی که طراحی و ساخته‌ام" },
   "projects.subtitle": {
-    en: "A selection of research, data, and engineering projects.",
-    fa: "گزیده‌ای از پروژه‌های پژوهشی، داده‌ای و مهندسی.",
+    en: "Academic and course projects — from statistical modeling to deep learning.",
+    fa: "پروژه‌های دانشگاهی و درسی — از مدل‌سازی آماری تا یادگیری عمیق.",
   },
   "skills.kicker": { en: "Skills", fa: "مهارت‌ها" },
   "skills.title": { en: "Tools of the trade", fa: "ابزارهای کار من" },
@@ -151,36 +134,25 @@ export const STRINGS = {
   "about.factName": { en: "Full name", fa: "نام کامل" },
   "about.factDegree": { en: "Degree", fa: "مدرک" },
   "about.factDegreeValue": {
-    en: "M.Sc. Computer Science (in progress)",
-    fa: "کارشناسی ارشد علوم کامپیوتر (در حال تحصیل)",
+    en: "M.Sc. in Data Science (in progress)",
+    fa: "کارشناسی ارشد علم داده (در حال تحصیل)",
   },
-  "about.factField": { en: "Field", fa: "گرایش" },
-  "about.factFieldValue": { en: "Data Science & ML", fa: "علم داده و یادگیری ماشین" },
+  "about.factBirth": { en: "Birthplace", fa: "زادگاه" },
+  "about.factBirthValue": { en: "Abhar, Zanjan, Iran", fa: "ابهر، زنجان، ایران" },
   "about.factLang": { en: "Languages", fa: "زبان‌ها" },
-  "about.factLangValue": { en: "Persian (native), English (fluent)", fa: "فارسی (زبان مادری)، انگلیسی (پیشرفته)" },
+  "about.factLangValue": {
+    en: "Persian & Azerbaijani Turkish (native) · English (professional)",
+    fa: "فارسی و ترکی آذربایجانی (زبان مادری) · انگلیسی (حرفه‌ای)",
+  },
   "about.downloadCv": { en: "Download full CV", fa: "دانلود رزومه کامل" },
-
-  /* Publications */
-  "pub.authors": { en: "Authors", fa: "نویسندگان" },
-  "pub.keywords": { en: "Keywords", fa: "واژگان کلیدی" },
-  "pub.copied": { en: "BibTeX copied to clipboard", fa: "BibTeX در حافظه کپی شد" },
-  "pub.type.journal": { en: "Journal", fa: "ژورنال" },
-  "pub.type.conference": { en: "Conference", fa: "کنفرانس" },
-  "pub.type.preprint": { en: "Preprint", fa: "پیش‌چاپ" },
-  "pub.type.inprogress": { en: "In progress", fa: "در حال انجام" },
-  "pub.linkPdf": { en: "PDF", fa: "PDF" },
-  "pub.linkDoi": { en: "DOI", fa: "DOI" },
-  "pub.linkCode": { en: "Code", fa: "کد" },
-  "pub.bibtex": { en: "BibTeX", fa: "BibTeX" },
 
   /* Projects */
   "projects.all": { en: "All", fa: "همه" },
   "projects.cat.ml": { en: "Machine Learning", fa: "یادگیری ماشین" },
   "projects.cat.dl": { en: "Deep Learning", fa: "یادگیری عمیق" },
-  "projects.cat.viz": { en: "Data Visualization", fa: "بصری‌سازی داده" },
-  "projects.cat.web": { en: "Web", fa: "وب" },
-  "projects.viewCode": { en: "Source", fa: "سورس" },
-  "projects.demo": { en: "Live demo", fa: "دمو" },
+  "projects.cat.ts": { en: "Time Series", fa: "سری زمانی" },
+  "projects.cat.db": { en: "Databases", fa: "پایگاه داده" },
+  "projects.supervisor": { en: "Supervised by", fa: "زیر نظر" },
   "projects.featured": { en: "Featured", fa: "ویژه" },
 
   /* Journey */
@@ -218,11 +190,11 @@ export const STRINGS = {
     fa: "درباره ایده، پروژه یا سوال خود بنویسید…",
   },
   "contact.send": { en: "Send message", fa: "ارسال پیام" },
-  "contact.sending": { en: "Sending…", fa: "در حال ارسال…" },
-  "contact.sentTitle": { en: "Message sent (demo)", fa: "پیام ارسال شد (نمایشی)" },
+  "contact.sending": { en: "Opening…", fa: "در حال باز کردن…" },
+  "contact.sentTitle": { en: "Opening your email app…", fa: "در حال باز کردن برنامه ایمیل…" },
   "contact.sentDesc": {
-    en: "Thanks for reaching out! This is a template preview — the backend will be connected soon.",
-    fa: "از تماس شما سپاسگزارم! این یک پیش‌نمایش قالب است — به‌زودی بک‌اند به آن متصل می‌شود.",
+    en: "Your email client opens with the message pre-filled — just press send. If nothing happens, write to hrfpour@gmail.com directly.",
+    fa: "برنامهٔ ایمیل شما با پیام آماده باز می‌شود — فقط دکمهٔ ارسال را بزنید. اگر اتفاقی نیفتاد، مستقیم به hrfpour@gmail.com ایمیل بزنید.",
   },
   "contact.errorRequired": { en: "Please fill in all required fields.", fa: "لطفاً همه فیلدهای ضروری را تکمیل کنید." },
 
@@ -253,157 +225,51 @@ export interface ResearchArea {
 export const RESEARCH_AREAS: ResearchArea[] = [
   {
     icon: "network",
-    title: { en: "Network Traffic Analysis", fa: "تحلیل ترافیک شبکه" },
+    title: { en: "Graph Neural Networks & Traffic Forecasting", fa: "شبکه‌های عصبی گرافی و پیش‌بینی ترافیک" },
     description: {
-      en: "Mining high-volume telemetry and NetFlow data to understand, classify, and secure modern networks.",
-      fa: "کاوش در داده‌های حجیم تله‌متری و NetFlow برای فهم، طبقه‌بندی و امن‌سازی شبکه‌های مدرن.",
+      en: "My thesis focus: spatio-temporal GNNs that model road-network structure for more reliable traffic prediction.",
+      fa: "موضوع پایان‌نامه‌ام: شبکه‌های عصبی گرافی فضایی-زمانی که ساختار شبکهٔ راه را برای پیش‌بینی مطمئن‌تر ترافیک مدل می‌کنند.",
     },
   },
   {
     icon: "radar",
-    title: { en: "Anomaly Detection", fa: "تشخیص ناهنجاری" },
+    title: { en: "Bayesian Methods & Reliability", fa: "روش‌های بیزی و قابلیت اطمینان" },
     description: {
-      en: "Statistical methods (MAD, IQR) and ML models (Isolation Forest, LSTM) for spotting outliers in streaming data.",
-      fa: "روش‌های آماری (MAD، IQR) و مدل‌های یادگیری ماشین (Isolation Forest، LSTM) برای یافتن نقاط پرت در داده‌های جریانی.",
+      en: "Probabilistic thinking for models you can trust — prior knowledge, uncertainty quantification, and reliability evaluation.",
+      fa: "تفکر احتمالاتی برای مدل‌های قابل‌اعتماد — دانش پیشین، کمّی‌سازی عدم‌قطعیت و ارزیابی قابلیت اطمینان.",
     },
   },
   {
     icon: "activity",
-    title: { en: "Time-Series Modeling", fa: "مدل‌سازی سری‌های زمانی" },
+    title: { en: "Time-Series Analysis", fa: "تحلیل سری‌های زمانی" },
     description: {
-      en: "Forecasting and sequential pattern mining with classical statistics and deep recurrent architectures.",
-      fa: "پیش‌بینی و کاوش الگوهای ترتیبی با آمار کلاسیک و معماری‌های عمیق بازگشتی.",
-    },
-  },
-  {
-    icon: "eye",
-    title: { en: "Interpretable ML", fa: "یادگیری ماشین قابل تفسیر" },
-    description: {
-      en: "Models should explain themselves — attention analysis, SHAP values, and human-readable decision rules.",
-      fa: "مدل‌ها باید خودشان را توضیح دهند — تحلیل توجه، مقادیر SHAP و قواعد تصمیم قابل فهم برای انسان.",
-    },
-  },
-  {
-    icon: "chart",
-    title: { en: "Data Visualization", fa: "بصری‌سازی داده" },
-    description: {
-      en: "Interactive dashboards and visual analytics that make complex datasets instantly understandable.",
-      fa: "داشبوردهای تعاملی و تحلیل‌های بصری که داده‌های پیچیده را فوراً قابل فهم می‌کنند.",
+      en: "Forecasting with classical models (ARIMA/SARIMA) and neural approaches — with honest uncertainty and careful backtesting.",
+      fa: "پیش‌بینی با مدل‌های کلاسیک (ARIMA/SARIMA) و رویکردهای عصبی — با عدم‌قطعیت صادقانه و بک‌تست دقیق.",
     },
   },
   {
     icon: "brain",
-    title: { en: "Deep Learning", fa: "یادگیری عمیق" },
+    title: { en: "Machine Learning", fa: "یادگیری ماشین" },
     description: {
-      en: "Designing and training neural architectures — CNNs, RNNs, and hybrid models — for real-world problems.",
-      fa: "طراحی و آموزش معماری‌های عصبی — CNN، RNN و مدل‌های ترکیبی — برای مسائل دنیای واقعی.",
+      en: "From classical statistical learning to modern ensembles — building models that generalize, with rigorous validation.",
+      fa: "از یادگیری آماری کلاسیک تا مدل‌های جمعی مدرن — ساخت مدل‌های تعمیم‌پذیر با اعتبارسنجی دقیق.",
     },
   },
-];
-
-/* ------------------------------------------------------------------ */
-/* Publications (sample data — replace with real ones)                 */
-/* ------------------------------------------------------------------ */
-
-export type PubType = "journal" | "conference" | "preprint" | "inprogress";
-
-export interface Publication {
-  id: string;
-  title: LT;
-  authors: string; // same in both languages (Latin script)
-  venue: LT;
-  year: number;
-  type: PubType;
-  abstract: LT;
-  keywords: string[];
-  links: { pdf?: string; doi?: string; code?: string };
-  bibtex: string;
-}
-
-export const PUBLICATIONS: Publication[] = [
   {
-    id: "pub-1",
-    title: {
-      en: "Statistical and Deep Learning Approaches for Anomaly Detection in High-Frequency Network Traffic: A Comparative Study",
-      fa: "رویکردهای آماری و یادگیری عمیق برای تشخیص ناهنجاری در ترافیک شبکه با فرکانس بالا: یک مطالعه تطبیقی",
+    icon: "eye",
+    title: { en: "Deep Learning & Computer Vision", fa: "یادگیری عمیق و بینایی ماشین" },
+    description: {
+      en: "Training modern CNN architectures for image classification and exploring transfer learning on real datasets.",
+      fa: "آموزش معماری‌های مدرن CNN برای دسته‌بندی تصویر و به‌کارگیری یادگیری انتقالی روی داده‌های واقعی.",
     },
-    authors: "H. Farhadipour, A. Colleague, R. Advisor",
-    venue: {
-      en: "Journal of Network and Computer Applications (under review)",
-      fa: "Journal of Network and Computer Applications (در حال داوری)",
-    },
-    year: 2025,
-    type: "inprogress",
-    abstract: {
-      en: "We benchmark MAD, IQR, Isolation Forest, and LSTM-based detectors on streaming NetFlow data, proposing a hybrid scoring pipeline that reduces false positives by 31% while keeping latency under 50 ms per flow.",
-      fa: "ما روش‌های MAD، IQR، Isolation Forest و آشکارسازهای مبتنی بر LSTM را روی داده‌های جریانی NetFlow محک می‌زنیم و یک خط‌لوله امتیازدهی ترکیبی پیشنهاد می‌کنیم که مثبت‌های کاذب را ۳۱٪ کاهش می‌دهد و تأخیر را زیر ۵۰ میلی‌ثانیه برای هر جریان نگه می‌دارد.",
-    },
-    keywords: ["Anomaly Detection", "NetFlow", "LSTM", "Isolation Forest"],
-    links: {},
-    bibtex: `@article{farhadipour2025anomaly,\n  title={Statistical and Deep Learning Approaches for Anomaly Detection in High-Frequency Network Traffic},\n  author={Farhadipour, Hamidreza and Colleague, A. and Advisor, R.},\n  journal={Journal of Network and Computer Applications},\n  year={2025}\n}`,
   },
   {
-    id: "pub-2",
-    title: {
-      en: "LSTM-Based Sequential Modeling for Real-Time Intrusion Detection in Streaming Network Data",
-      fa: "مدل‌سازی ترتیبی مبتنی بر LSTM برای تشخیص نفوذ بلادرنگ در داده‌های جریانی شبکه",
+    icon: "chart",
+    title: { en: "Data Mining & Evolutionary Computation", fa: "داده‌کاوی و محاسبات تکاملی" },
+    description: {
+      en: "Clustering, classification, and optimization with genetic algorithms and swarm intelligence — finding structure where nothing is labeled.",
+      fa: "خوشه‌بندی، رده‌بندی و بهینه‌سازی با الگوریتم‌های ژنتیک و هوش جمعی — یافتن ساختار در داده‌های بدون برچسب.",
     },
-    authors: "H. Farhadipour, M. Collaborator",
-    venue: {
-      en: "Proc. 29th International Computer Conference (CSICC), Tehran",
-      fa: "مجموعه مقالات بیست‌ونهمین کنفرانس بین‌المللی کامپیوتر (CSICC)، تهران",
-    },
-    year: 2024,
-    type: "conference",
-    abstract: {
-      en: "A lightweight stacked-LSTM architecture for online intrusion detection that processes packet sequences in sliding windows, achieving 97.2% F1-score on a public benchmark while running on edge hardware.",
-      fa: "معماری سبک LSTM انباشته برای تشخیص نفوذ برخط که دنباله بسته‌ها را در پنجره‌های لغزان پردازش می‌کند و روی یک بنچمارک عمومی به امتیاز F1 برابر ۹۷٫۲٪ رسیده و روی سخت‌افزار لبه اجرا می‌شود.",
-    },
-    keywords: ["Intrusion Detection", "LSTM", "Real-time", "Edge Computing"],
-    links: { pdf: "#", code: "https://github.com/hrfpour" },
-    bibtex: `@inproceedings{farhadipour2024lstm,\n  title={LSTM-Based Sequential Modeling for Real-Time Intrusion Detection},\n  author={Farhadipour, Hamidreza and Collaborator, M.},\n  booktitle={Proc. 29th International Computer Conference (CSICC)},\n  year={2024}\n}`,
-  },
-  {
-    id: "pub-3",
-    title: {
-      en: "Interpretable Time-Series Anomaly Scoring with Attention Mechanisms",
-      fa: "امتیازدهی قابل تفسیر ناهنجاری در سری‌های زمانی با سازوکار توجه",
-    },
-    authors: "H. Farhadipour",
-    venue: {
-      en: "arXiv preprint arXiv:2405.00000",
-      fa: "پیش‌چاپ arXiv: arXiv:2405.00000",
-    },
-    year: 2024,
-    type: "preprint",
-    abstract: {
-      en: "We show that attention weights of a small transformer encoder can double as anomaly explanations, producing per-timestep saliency maps that domain experts found actionable in a user study (n=12).",
-      fa: "نشان می‌دهیم که وزن‌های توجه یک انکودر ترنسفورمر کوچک می‌توانند به‌عنوان توضیح ناهنجاری عمل کنند و نقشه‌های اهمیت زمانی تولید کنند که در یک مطالعۀ کاربری (n=12) برای کارشناسان حوزه قابل استفاده بود.",
-    },
-    keywords: ["Attention", "Explainability", "Time Series", "Transformer"],
-    links: { pdf: "#" },
-    bibtex: `@misc{farhadipour2024attention,\n  title={Interpretable Time-Series Anomaly Scoring with Attention Mechanisms},\n  author={Farhadipour, Hamidreza},\n  howpublished={arXiv preprint},\n  year={2024}\n}`,
-  },
-  {
-    id: "pub-4",
-    title: {
-      en: "A Survey of Machine Learning Methods for Network Telemetry Analysis",
-      fa: "مروری بر روش‌های یادگیری ماشین برای تحلیل تله‌متری شبکه",
-    },
-    authors: "H. Farhadipour, R. Advisor",
-    venue: {
-      en: "In preparation",
-      fa: "در حال آماده‌سازی",
-    },
-    year: 2025,
-    type: "inprogress",
-    abstract: {
-      en: "A structured survey covering 120+ papers on ML-driven network analytics: traffic classification, anomaly detection, capacity forecasting, and the datasets/benchmarks that drive the field forward.",
-      fa: "یک مرور ساختاریافته روی بیش از ۱۲۰ مقاله در حوزه تحلیل شبکه با یادگیری ماشین: طبقه‌بندی ترافیک، تشخیص ناهنجاری، پیش‌بینی ظرفیت و مجموعه‌داده‌ها و بنچمارک‌های پیش‌برنده این حوزه.",
-    },
-    keywords: ["Survey", "Network Telemetry", "Machine Learning"],
-    links: {},
-    bibtex: `@unpublished{farhadipour2025survey,\n  title={A Survey of Machine Learning Methods for Network Telemetry Analysis},\n  author={Farhadipour, Hamidreza and Advisor, R.},\n  note={In preparation},\n  year={2025}\n}`,
   },
 ];
 
@@ -411,7 +277,7 @@ export const PUBLICATIONS: Publication[] = [
 /* Projects                                                            */
 /* ------------------------------------------------------------------ */
 
-export type ProjectCategory = "ml" | "dl" | "viz" | "web";
+export type ProjectCategory = "ml" | "dl" | "ts" | "db";
 
 export interface Project {
   id: string;
@@ -419,93 +285,94 @@ export interface Project {
   description: LT;
   tech: string[];
   category: ProjectCategory;
-  year: string;
+  year: LT;
+  supervisor: LT;
   github?: string;
   demo?: string;
   featured?: boolean;
-  icon: "dashboard" | "radar" | "brain" | "shield" | "database" | "globe";
+  icon: "dashboard" | "radar" | "brain" | "shield" | "database" | "globe" | "chart" | "dna";
 }
 
 export const PROJECTS: Project[] = [
   {
-    id: "prj-1",
-    title: { en: "Network Traffic Analytics Dashboard", fa: "داشبورد تحلیل ترافیک شبکه" },
+    id: "prj-ts",
+    title: { en: "Time-Series Modeling & Forecasting", fa: "مدل‌سازی و پیش‌بینی سری‌های زمانی" },
     description: {
-      en: "Interactive Streamlit + Plotly dashboard for exploring network telemetry: time-series views, anomaly highlighting, and statistical summaries out of the box.",
-      fa: "داشبورد تعاملی با Streamlit و Plotly برای کاوش تله‌متری شبکه: نماهای سری زمانی، برجسته‌سازی ناهنجاری‌ها و خلاصه‌های آماری آماده.",
+      en: "End-to-end forecasting study: decomposition and stationarity testing, ARIMA/SARIMA model selection, residual diagnostics, and accuracy benchmarking (RMSE/MAE) across candidate models.",
+      fa: "مطالعهٔ کامل پیش‌بینی: تجزیه و آزمون ایستایی، انتخاب مدل ARIMA/SARIMA، آزمون‌های باقیمانده و مقایسهٔ دقت (RMSE/MAE) مدل‌های کاندید.",
     },
-    tech: ["Python", "Streamlit", "Plotly", "Pandas"],
-    category: "viz",
-    year: "2024",
-    github: "https://github.com/hrfpour",
+    tech: ["Python", "pandas", "statsmodels", "ARIMA / SARIMA", "Matplotlib"],
+    category: "ts",
+    year: { en: "Jan 2024", fa: "دی ۱۴۰۲" },
+    supervisor: { en: "Dr. Mohammadreza Salehirad", fa: "دکتر محمدرضا صالحی‌راد" },
     featured: true,
-    icon: "dashboard",
+    icon: "chart",
   },
   {
-    id: "prj-2",
-    title: { en: "Anomaly Detection in High-Frequency Data", fa: "تشخیص ناهنجاری در داده‌های با فرکانس بالا" },
+    id: "prj-db",
+    title: { en: "Hybrid SQL + NoSQL Database Architecture", fa: "معماری ترکیبی پایگاه داده (SQL و NoSQL)" },
     description: {
-      en: "Comparative study of statistical (MAD, IQR) and ML (Isolation Forest, LSTM) methods for outlier detection in streaming network data — with reproducible notebooks.",
-      fa: "مطالعه تطبیقی روش‌های آماری (MAD، IQR) و یادگیری ماشین (Isolation Forest، LSTM) برای کشف نقاط پرت در داده‌های جریانی شبکه — همراه با نوت‌بوک‌های بازتولیدپذیر.",
+      en: "Designed and implemented a hybrid relational/document database architecture — mapping each workload to the right store and benchmarking cross-store queries for a realistic application scenario.",
+      fa: "طراحی و پیاده‌سازی معماری ترکیبی رابطه‌ای/سندی پایگاه داده — تناسب هر بار کاری با فروشگاه مناسب و محک‌زدن کوئری‌های بین‌فروشگاهی برای یک سناریوی واقعی.",
     },
-    tech: ["Python", "Scikit-learn", "PyTorch", "LSTM"],
-    category: "ml",
-    year: "2024",
-    github: "https://github.com/hrfpour",
-    featured: true,
-    icon: "radar",
-  },
-  {
-    id: "prj-3",
-    title: { en: "Time-Series Forecasting Engine", fa: "موتور پیش‌بینی سری زمانی" },
-    description: {
-      en: "Modular forecasting pipeline (classical + deep models) with backtesting, hyperparameter search, and exportable reports.",
-      fa: "خط‌لوله ماژولار پیش‌بینی (مدل‌های کلاسیک و عمیق) همراه با بک‌تستینگ، جست‌وجوی ابرپارامتر و گزارش‌های خروجی.",
-    },
-    tech: ["PyTorch", "Optuna", "Pandas"],
-    category: "dl",
-    year: "2024",
-    github: "https://github.com/hrfpour",
-    icon: "brain",
-  },
-  {
-    id: "prj-4",
-    title: { en: "NetFlow Intrusion Classifier", fa: "طبقه‌بند نفوذ NetFlow" },
-    description: {
-      en: "Real-time classifier that labels NetFlow records as benign or malicious using gradient-boosted trees, designed for edge deployment.",
-      fa: "طبقه‌بند بلادرنگی که رکوردهای NetFlow را با درخت‌های تقویت گرادیان به عنوان سالم یا مخرب برچسب می‌زند؛ طراحی‌شده برای استقرار در لبه.",
-    },
-    tech: ["XGBoost", "scikit-learn", "FastAPI"],
-    category: "ml",
-    year: "2023",
-    github: "https://github.com/hrfpour",
-    icon: "shield",
-  },
-  {
-    id: "prj-5",
-    title: { en: "Insight SQL Analytics Warehouse", fa: "انبار داده تحلیلی Insight" },
-    description: {
-      en: "Star-schema data warehouse + SQL analytics layer feeding KPI dashboards; includes ETL jobs and data-quality checks.",
-      fa: "انبار داده با طرح ستاره‌ای و لایه تحلیل SQL تغذیه‌کننده داشبوردهای KPI؛ شامل Jobهای ETL و کنترل کیفیت داده.",
-    },
-    tech: ["PostgreSQL", "SQL", "dbt"],
-    category: "viz",
-    year: "2023",
-    github: "https://github.com/hrfpour",
+    tech: ["SQL", "MongoDB", "Schema Design", "Query Optimization"],
+    category: "db",
+    year: { en: "Jan 2025", fa: "دی ۱۴۰۳" },
+    supervisor: { en: "Dr. Mohammad Ebrahim Shiri", fa: "دکتر محمدابراهیم شیری" },
     icon: "database",
   },
   {
-    id: "prj-6",
-    title: { en: "This Website", fa: "همین وب‌سایت" },
+    id: "prj-cluster",
+    title: { en: "Comprehensive Data Analysis: Clustering & Classification", fa: "تحلیل جامع داده با خوشه‌بندی و رده‌بندی" },
     description: {
-      en: "A bilingual (EN/FA) academic portfolio with dark mode, RTL support, and a fully responsive design — built from scratch.",
-      fa: "نمونه‌کار آکادمیک دوزبانه (انگلیسی/فارسی) با حالت تیره، پشتیبانی راست‌به‌چپ و طراحی کاملاً واکنش‌گرا — ساخته‌شده از صفر.",
+      en: "Full analytical cycle on a real dataset — preprocessing and missing-data handling, exploratory analysis, unsupervised segmentation, and supervised classification with model comparison.",
+      fa: "چرخهٔ کامل تحلیل روی دادهٔ واقعی — پیش‌پردازش و مدیریت داده‌های گمشده، کاوش اولیه، قطعه‌بندی بدون‌نظارت و رده‌بندی نظارت‌شده با مقایسهٔ مدل‌ها.",
     },
-    tech: ["Next.js", "TypeScript", "Tailwind CSS"],
-    category: "web",
-    year: "2025",
-    github: "https://github.com/hrfpour",
-    icon: "globe",
+    tech: ["Python", "scikit-learn", "K-Means", "Random Forest", "PCA"],
+    category: "ml",
+    year: { en: "Feb 2025", fa: "بهمن ۱۴۰۳" },
+    supervisor: { en: "Dr. Vahid Rezaie Tabar", fa: "دکتر وحید رضایی‌تبار" },
+    icon: "dashboard",
+  },
+  {
+    id: "prj-spam",
+    title: { en: "Bayesian Email Spam Detection", fa: "تشخیص هرزنامه ایمیل با رویکرد بیزی" },
+    description: {
+      en: "Built a probabilistic spam filter from scratch — text preprocessing, Bag-of-Words / TF-IDF features, and Multinomial Naive Bayes evaluated with precision/recall trade-offs.",
+      fa: "ساخت فیلتر احتمالاتی هرزنامه از صفر — پیش‌پردازش متن، ویژگی‌های Bag-of-Words و TF-IDF و Naive Bayes چندجمله‌ای با ارزیابی توازن دقت/بازیابی.",
+    },
+    tech: ["Python", "Naive Bayes", "NLP", "scikit-learn"],
+    category: "ml",
+    year: { en: "Nov 2025", fa: "آبان ۱۴۰۴" },
+    supervisor: { en: "Dr. Farzad Eskandari", fa: "دکتر فرزاد اسکندری" },
+    icon: "shield",
+  },
+  {
+    id: "prj-cnn",
+    title: { en: "Pistachio Image Classification with Modern CNNs", fa: "دسته‌بندی تصاویر پسته با معماری‌های مدرن CNN" },
+    description: {
+      en: "Transfer-learning benchmark of modern CNN architectures for pistachio variety classification — augmentation strategies and a comparative evaluation of accuracy versus inference cost.",
+      fa: "محک‌زدن معماری‌های مدرن CNN با یادگیری انتقالی برای دسته‌بندی ارقام پسته — راهبردهای افزایش داده و مقایسهٔ دقت در برابر هزینهٔ استنتاج.",
+    },
+    tech: ["PyTorch", "Transfer Learning", "ResNet", "EfficientNet"],
+    category: "dl",
+    year: { en: "Dec 2025", fa: "آذر ۱۴۰۴" },
+    supervisor: { en: "Dr. Mohammadsharam Moein", fa: "دکتر محمدشهرام معین" },
+    featured: true,
+    icon: "brain",
+  },
+  {
+    id: "prj-evo",
+    title: { en: "Evolutionary vs. Swarm Algorithms: A Comparative Study", fa: "مقایسهٔ تطبیقی الگوریتم‌های تکاملی و هوش جمعی" },
+    description: {
+      en: "Implemented Genetic Algorithms and Particle Swarm Optimization from scratch, comparing convergence, robustness, and solution quality on continuous and discrete optimization benchmarks.",
+      fa: "پیاده‌سازی الگوریتم ژنتیک و بهینه‌سازی ازدحام ذرات از صفر و مقایسهٔ همگرایی، پایداری و کیفیت جواب روی بنچمارک‌های بهینه‌سازی پیوسته و گسسته.",
+    },
+    tech: ["Python", "Genetic Algorithm", "Particle Swarm Optimization", "Benchmarking"],
+    category: "ml",
+    year: { en: "Jan 2026", fa: "دی ۱۴۰۴" },
+    supervisor: { en: "Dr. Shokouh Shahbeik", fa: "دکتر شکوه شاهبیک" },
+    icon: "dna",
   },
 ];
 
@@ -522,33 +389,33 @@ export interface SkillGroup {
 export const SKILL_GROUPS: SkillGroup[] = [
   {
     icon: "code",
-    title: { en: "Languages & Core", fa: "زبان‌ها و مبانی" },
-    skills: ["Python", "SQL", "R", "Bash", "Git & GitHub", "OOP & Clean Code"],
-  },
-  {
-    icon: "sparkles",
-    title: { en: "Machine Learning", fa: "یادگیری ماشین" },
-    skills: ["Scikit-learn", "XGBoost", "Feature Engineering", "Model Evaluation", "Anomaly Detection"],
+    title: { en: "Programming & Databases", fa: "برنامه‌نویسی و پایگاه داده" },
+    skills: ["Python (Pandas, NumPy)", "R", "SQL", "SPSS", "Git & GitHub", "Jupyter"],
   },
   {
     icon: "brain",
-    title: { en: "Deep Learning", fa: "یادگیری عمیق" },
-    skills: ["PyTorch", "TensorFlow / Keras", "LSTM / GRU", "CNN", "Attention & Transformers"],
+    title: { en: "Machine Learning & Deep Learning", fa: "یادگیری ماشین و یادگیری عمیق" },
+    skills: ["Scikit-learn", "PyTorch", "CNNs & Transfer Learning", "ARIMA / SARIMA", "Naive Bayes & Ensembles"],
   },
   {
     icon: "chart",
-    title: { en: "Data & Visualization", fa: "داده و بصری‌سازی" },
-    skills: ["Pandas", "NumPy", "Plotly", "Matplotlib", "Streamlit", "Jupyter"],
+    title: { en: "Statistics & Data Mining", fa: "آمار و داده‌کاوی" },
+    skills: ["Statistical Inference", "Hypothesis Testing", "Clustering & Classification", "Feature Engineering", "Regression Analysis"],
   },
   {
     icon: "wrench",
-    title: { en: "Tools & Platforms", fa: "ابزارها و پلتفرم‌ها" },
-    skills: ["Linux", "Docker", "PostgreSQL", "FastAPI", "LaTeX", "GitHub Actions"],
+    title: { en: "Data Engineering & Visualization", fa: "مهندسی و بصری‌سازی داده" },
+    skills: ["SQL / DBMS", "MongoDB (NoSQL)", "Missing-Data Handling", "Matplotlib & Plotly", "ggplot2"],
+  },
+  {
+    icon: "sparkles",
+    title: { en: "Communication & Teaching", fa: "ارتباط و تدریس" },
+    skills: ["Scientific Writing (FA/EN)", "Teaching & TA Experience", "Data Storytelling", "Technical Presentation"],
   },
 ];
 
 /* ------------------------------------------------------------------ */
-/* Education & Experience (sample data)                                */
+/* Education & Experience                                              */
 /* ------------------------------------------------------------------ */
 
 export interface EducationItem {
@@ -561,37 +428,27 @@ export interface EducationItem {
 
 export const EDUCATION: EducationItem[] = [
   {
-    degree: { en: "M.Sc. in Computer Science", fa: "کارشناسی ارشد علوم کامپیوتر" },
-    school: { en: "University of Tehran", fa: "دانشگاه تهران" },
-    period: { en: "2023 — Present", fa: "۲۰۲۳ — اکنون" },
+    degree: { en: "M.Sc. in Data Science", fa: "کارشناسی ارشد علم داده" },
+    school: { en: "Allameh Tabataba'i University (ATU), Tehran", fa: "دانشگاه علامه طباطبائی، تهران" },
+    period: { en: "Oct 2024 — Present", fa: "مهر ۱۴۰۳ — اکنون" },
     current: true,
     details: [
+      { en: "GPA: 18.74 / 20", fa: "معدل: ۱۸٫۷۴ از ۲۰" },
       {
-        en: "Focus: Data Science & Machine Learning",
-        fa: "گرایش: علم داده و یادگیری ماشین",
-      },
-      {
-        en: "Thesis: Deep learning approaches for anomaly detection in high-volume network traffic",
-        fa: "پایان‌نامه: رویکردهای یادگیری عمیق برای تشخیص ناهنجاری در ترافیک شبکه با حجم بالا",
-      },
-      {
-        en: "Graduate Research Assistant at the Data Science Lab",
-        fa: "دستیار پژوهشگر ارشد در آزمایشگاه علم داده",
+        en: "Thesis: Enhancing reliability in traffic forecasting by integrating spatio-temporal graph neural networks with Bayesian approaches",
+        fa: "پایان‌نامه: ارزیابی و بهبود قابلیت اطمینان در پیش‌بینی ترافیک با استفاده از تلفیق شبکه‌های عصبی گرافی فضایی-زمانی با رویکرد بیزی",
       },
     ],
   },
   {
-    degree: { en: "B.Sc. in Computer Science", fa: "کارشناسی علوم کامپیوتر" },
-    school: { en: "University of Isfahan", fa: "دانشگاه اصفهان" },
-    period: { en: "2019 — 2023", fa: "۲۰۱۹ — ۲۰۲۳" },
+    degree: { en: "B.Sc. in Statistics", fa: "کارشناسی آمار" },
+    school: { en: "Allameh Tabataba'i University (ATU), Tehran", fa: "دانشگاه علامه طباطبائی، تهران" },
+    period: { en: "Sep 2019 — Jul 2024", fa: "مهر ۱۳۹۸ — تیر ۱۴۰۳" },
     details: [
+      { en: "GPA: 15.98 / 20", fa: "معدل: ۱۵٫۹۸ از ۲۰" },
       {
-        en: "Final project: real-time network traffic classification with ML",
-        fa: "پروژه پایانی: طبقه‌بندی بلادرنگ ترافیک شبکه با یادگیری ماشین",
-      },
-      {
-        en: "Teaching assistant for Data Structures (2 semesters)",
-        fa: "دستیار آموزش درس ساختمان داده (۲ نیم‌سال)",
+        en: "Core coursework: statistical inference, regression analysis, data mining, machine learning",
+        fa: "دروس اصلی: استنباط آماری، تحلیل رگرسیون، داده‌کاوی، یادگیری ماشین",
       },
     ],
   },
@@ -607,48 +464,17 @@ export interface ExperienceItem {
 
 export const EXPERIENCE: ExperienceItem[] = [
   {
-    role: { en: "Graduate Research Assistant", fa: "دستیار پژوهشگر ارشد" },
-    org: { en: "Data Science Lab — University of Tehran", fa: "آزمایشگاه علم داده — دانشگاه تهران" },
-    period: { en: "2024 — Present", fa: "۲۰۲۴ — اکنون" },
-    current: true,
+    role: { en: "Teaching Assistant — Programming with R", fa: "دستیار آموزشی — درس برنامه‌نویسی با R" },
+    org: { en: "Allameh Tabataba'i University", fa: "دانشگاه علامه طباطبائی" },
+    period: { en: "Graduate studies", fa: "دورهٔ تحصیلات تکمیلی" },
     details: [
       {
-        en: "Leading research on ML-based anomaly detection for network telemetry.",
-        fa: "راهبری پژوهش در زمینه تشخیص ناهنجاری مبتنی بر یادگیری ماشین برای تله‌متری شبکه.",
+        en: "Led hands-on R sessions and reviewed assignments for the Programming with R course.",
+        fa: "برگزاری جلسات عملی R و بازبینی تمرین‌های درس برنامه‌نویسی با R.",
       },
       {
-        en: "Co-authoring journal & conference papers; maintaining the lab's benchmark suite.",
-        fa: "هم‌نویسی مقالات ژورنالی و کنفرانسی؛ نگهداری مجموعه بنچمارک آزمایشگاه.",
-      },
-    ],
-  },
-  {
-    role: { en: "Teaching Assistant — Machine Learning", fa: "دستیار آموزش — یادگیری ماشین" },
-    org: { en: "University of Tehran", fa: "دانشگاه تهران" },
-    period: { en: "Fall 2024", fa: "پاییز ۲۰۲۴" },
-    details: [
-      {
-        en: "Ran weekly problem-solving sessions and graded projects for 60+ students.",
-        fa: "برگزاری جلسات هفتگی حل تمرین و تصحیح پروژه‌های بیش از ۶۰ دانشجو.",
-      },
-      {
-        en: "Created hands-on notebooks on feature engineering and model evaluation.",
-        fa: "ساخت نوت‌بوک‌های عملی درباره مهندسی ویژگی و ارزیابی مدل.",
-      },
-    ],
-  },
-  {
-    role: { en: "Data Science Intern", fa: "کارآموز علم داده" },
-    org: { en: "Tech Startup — Tehran", fa: "استارتاپ فناوری — تهران" },
-    period: { en: "Summer 2023", fa: "تابستان ۲۰۲۳" },
-    details: [
-      {
-        en: "Built churn-prediction and reporting pipelines serving the product team.",
-        fa: "ساخت خطوط لوله پیش‌بینی ریزش مشتری و گزارش‌دهی در خدمت تیم محصول.",
-      },
-      {
-        en: "Automated weekly KPI dashboards, cutting manual reporting time by 70%.",
-        fa: "خودکارسازی داشبوردهای هفتگی KPI و کاهش ۷۰٪ی زمان گزارش‌گیری دستی.",
+        en: "Supported students with data manipulation, visualization, and statistical computing in R.",
+        fa: "همراهی دانشجویان در دست‌ورزی داده، بصری‌سازی و محاسبات آماری با R.",
       },
     ],
   },
@@ -658,38 +484,29 @@ export interface Honor {
   icon: "award" | "cert";
   title: LT;
   issuer: LT;
-  year: string;
+  year?: string;
 }
 
 export const HONORS: Honor[] = [
   {
-    icon: "award",
-    title: { en: "Excellence Scholarship (M.Sc.)", fa: "بورسیه ممتاز (کارشناسی ارشد)" },
-    issuer: { en: "University of Tehran", fa: "دانشگاه تهران" },
-    year: "2023",
+    icon: "cert",
+    title: { en: "Machine Learning — Course Certificate", fa: "یادگیری ماشین — گواهینامهٔ دوره" },
+    issuer: { en: "Allameh Tabataba'i University", fa: "دانشگاه علامه طباطبائی" },
   },
   {
     icon: "cert",
-    title: { en: "Machine Learning Specialization", fa: "تخصص یادگیری ماشین" },
-    issuer: { en: "Coursera — DeepLearning.AI", fa: "Coursera — DeepLearning.AI" },
-    year: "2023",
+    title: { en: "Data Mining — Course Certificate", fa: "داده‌کاوی — گواهینامهٔ دوره" },
+    issuer: { en: "Allameh Tabataba'i University", fa: "دانشگاه علامه طباطبائی" },
   },
   {
     icon: "cert",
-    title: { en: "Deep Learning Specialization", fa: "تخصص یادگیری عمیق" },
-    issuer: { en: "Coursera — DeepLearning.AI", fa: "Coursera — DeepLearning.AI" },
-    year: "2024",
-  },
-  {
-    icon: "award",
-    title: { en: "Top 1% — SQL & Python Badges", fa: "۱٪ برتر — نشان‌های SQL و Python" },
-    issuer: { en: "Kaggle", fa: "Kaggle" },
-    year: "2023",
+    title: { en: "Advanced Python", fa: "پایتون پیشرفته" },
+    issuer: { en: "Sharif University of Technology (Maktabkhooneh)", fa: "دانشگاه صنعتی شریف (مکتب‌خونه)" },
   },
 ];
 
 /* ------------------------------------------------------------------ */
-/* Blog posts (sample)                                                 */
+/* Blog posts (planned)                                                */
 /* ------------------------------------------------------------------ */
 
 export interface BlogPost {
@@ -704,42 +521,44 @@ export interface BlogPost {
 export const BLOG_POSTS: BlogPost[] = [
   {
     title: {
-      en: "Understanding Isolation Forest: An Intuitive Guide",
-      fa: "درک شهودی Isolation Forest: راهنمای ساده",
+      en: "A Gentle Introduction to Spatio-Temporal Graph Neural Networks",
+      fa: "درآمدی بر شبکه‌های عصبی گرافی فضایی-زمانی",
     },
     excerpt: {
-      en: "Why does randomly cutting the feature space find anomalies so well? A visual, math-light walkthrough with Python examples.",
-      fa: "چرا برش تصادفی فضای ویژگی این‌قدر خوب ناهنجاری‌ها را پیدا می‌کند؟ یک walkthrough تصویری با مثال‌های پایتون و حداقل ریاضیات.",
+      en: "How GNNs encode road networks in space and time — and why they are changing traffic forecasting.",
+      fa: "شبکه‌های عصبی گرافی چگونه شبکهٔ راه را در فضا و زمان مدل می‌کنند — و چرا آیندهٔ پیش‌بینی ترافیک را تغییر می‌دهند.",
     },
-    date: { en: "Feb 2025", fa: "بهمن ۱۴۰۳" },
-    readTime: 7,
-    tag: { en: "Machine Learning", fa: "یادگیری ماشین" },
-  },
-  {
-    title: {
-      en: "From Raw Packets to Insights: Network Telemetry 101",
-      fa: "از بسته خام تا بینش: تله‌متری شبکه ۱۰۱",
-    },
-    excerpt: {
-      en: "NetFlow, sFlow, packet captures — what they are, when to use each, and how to turn them into analysis-ready datasets.",
-      fa: "NetFlow، sFlow و Packet Capture — چیستند، کِی از هرکدام استفاده کنیم و چگونه به مجموعه‌داده‌های آماده تحلیل تبدیلشان کنیم.",
-    },
-    date: { en: "Jan 2025", fa: "دی ۱۴۰۳" },
-    readTime: 10,
-    tag: { en: "Networking", fa: "شبکه" },
-  },
-  {
-    title: {
-      en: "LSTMs for Anomaly Detection: Lessons Learned",
-      fa: "LSTM برای تشخیص ناهنجاری: درس‌های آموخته",
-    },
-    excerpt: {
-      en: "Window sizes, thresholds, and the traps of leakage — practical lessons from benchmarking recurrent models on streaming data.",
-      fa: "اندازه پنجره‌ها، آستانه‌ها و دام‌های نشتی داده — درس‌های عملی از محک‌زدن مدل‌های بازگشتی روی داده‌های جریانی.",
-    },
-    date: { en: "Nov 2024", fa: "آبان ۱۴۰۳" },
+    date: { en: "Planned", fa: "در نوبت نگارش" },
     readTime: 8,
     tag: { en: "Deep Learning", fa: "یادگیری عمیق" },
+    soon: true,
+  },
+  {
+    title: {
+      en: "Bayesian Thinking for Trustworthy Machine Learning",
+      fa: "تفکر بیزی برای یادگیری ماشین قابل‌اعتماد",
+    },
+    excerpt: {
+      en: "Priors, posterior uncertainty, and what it means for a model to know what it doesn't know.",
+      fa: "پیشین‌ها، عدم‌قطعیت پسین و معنای این که مدل بداند چه چیزهایی را نمی‌داند.",
+    },
+    date: { en: "Planned", fa: "در نوبت نگارش" },
+    readTime: 6,
+    tag: { en: "Statistics", fa: "آمار" },
+    soon: true,
+  },
+  {
+    title: {
+      en: "Time Series in R: From ARIMA to Modern Workflows",
+      fa: "سری زمانی در R: از ARIMA تا گردش‌کارهای مدرن",
+    },
+    excerpt: {
+      en: "Practical forecasting recipes in R — the language I teach — with tidyverts and reproducible pipelines.",
+      fa: "دستورکارهای عملی پیش‌بینی در R — زبانی که تدریس می‌کنم — با tidyverts و خط‌لوله‌های بازتولیدپذیر.",
+    },
+    date: { en: "Planned", fa: "در نوبت نگارش" },
+    readTime: 7,
+    tag: { en: "Time Series", fa: "سری زمانی" },
     soon: true,
   },
 ];
@@ -750,15 +569,15 @@ export const BLOG_POSTS: BlogPost[] = [
 
 export const SOCIALS = {
   github: { label: "GitHub", href: "https://github.com/hrfpour" },
-  linkedin: { label: "LinkedIn", href: "https://www.linkedin.com/in/hamidreza-farhadipour" },
-  scholar: { label: "Google Scholar", href: "https://scholar.google.com" },
-  email: { label: "Email", href: "mailto:contact@farhadipour.com" },
+  linkedin: { label: "LinkedIn", href: "https://www.linkedin.com/in/hamidreza-farhadipour-897aba284" },
+  scholar: { label: "Google Scholar", href: "https://scholar.google.com/citations?user=ZeLKEY4AAAAJ&hl=en" },
+  email: { label: "Email", href: "mailto:hrfpour@gmail.com" },
 };
 
-/** Hero stats — values are placeholders; update freely. */
+/** Hero stats */
 export const HERO_STATS = [
-  { value: "4", key: "stat.publications" as StringKey },
-  { value: "8+", key: "stat.projects" as StringKey },
-  { value: "3", key: "stat.awards" as StringKey },
-  { value: "2", key: "stat.teaching" as StringKey },
+  { value: "18.74", key: "stat.gpa" as StringKey },
+  { value: "6", key: "stat.projects" as StringKey },
+  { value: "3", key: "stat.certificates" as StringKey },
+  { value: "1", key: "stat.teaching" as StringKey },
 ];

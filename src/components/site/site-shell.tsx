@@ -5,7 +5,6 @@ import { Navbar } from "./navbar";
 import { Hero } from "./hero";
 import { About } from "./about";
 import { Research } from "./research";
-import { Publications } from "./publications";
 import { Projects } from "./projects";
 import { Skills } from "./skills";
 import { Journey } from "./journey";
@@ -23,7 +22,6 @@ export function SiteShell() {
           <Hero />
           <About />
           <Research />
-          <Publications />
           <Projects />
           <Skills />
           <Journey />

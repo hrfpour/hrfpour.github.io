@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate a sample one-page CV PDF for the template preview."""
+"""Generate the one-page CV PDF for farhadipour.com (English version)."""
 from reportlab.lib.pagesizes import A4
 from reportlab.lib.units import mm
 from reportlab.lib.colors import HexColor
@@ -59,18 +59,20 @@ c.setFillColor(HexColor("#ffffff"))
 c.setFont("Helvetica-Bold", 21)
 c.drawString(M + 8 * mm, y - 11.5 * mm, "Hamidreza Farhadipour")
 c.setFont("Helvetica", 10.5)
-c.drawString(M + 8 * mm, y - 18.5 * mm, "Data Scientist  |  M.Sc. Student in Computer Science  |  ML Researcher")
+c.drawString(M + 8 * mm, y - 18.5 * mm, "Data Scientist  |  M.Sc. Student in Data Science  |  B.Sc. in Statistics")
 c.setFont("Helvetica", 8.8)
-c.drawString(M + 8 * mm, y - 23.6 * mm, "contact@farhadipour.com   .   farhadipour.com   .   github.com/hrfpour   .   Tehran, Iran")
+c.drawString(M + 8 * mm, y - 23.6 * mm, "hrfpour@gmail.com   .   farhadipour.com   .   github.com/hrfpour   .   Tehran, Iran")
 y -= 36 * mm
 
 # ---------------- Summary ----------------
 y = heading("Summary", y)
 y = body(
-    "Data Scientist and M.Sc. student in Computer Science focused on network traffic analysis, "
-    "time-series modeling, and anomaly detection. Experienced with Python, scikit-learn, PyTorch, "
-    "and building interactive analytics dashboards. Passionate about interpretable machine learning "
-    "and bridging the gap between raw data and actionable insight.",
+    "M.Sc. Data Science student and B.Sc. Statistics graduate (Allameh Tabataba'i University, GPA 18.74/20), "
+    "relying on statistical inference and predictive modeling to solve data-driven problems. Hands-on research "
+    "experience in advanced statistical analysis, machine learning, and deep learning — running the full "
+    "data-analysis cycle from missing-data handling to feature engineering, training, evaluation, and model "
+    "interpretation. Thesis: enhancing reliability in traffic forecasting by integrating spatio-temporal graph "
+    "neural networks with Bayesian approaches.",
     y,
 )
 y -= 3 * mm
@@ -79,63 +81,67 @@ y -= 3 * mm
 y = heading("Education", y)
 c.setFillColor(DARK)
 c.setFont("Helvetica-Bold", 10)
-c.drawString(M, y, "M.Sc. in Computer Science - University of Tehran")
+c.drawString(M, y, "M.Sc. in Data Science - Allameh Tabataba'i University (ATU), Tehran")
 c.setFillColor(GRAY)
 c.setFont("Helvetica", 8.8)
-c.drawRightString(W - M, y, "2023 - Present")
+c.drawRightString(W - M, y, "Oct 2024 - Present")
 y -= 4.6 * mm
-y = bullet("Focus: Data Science & Machine Learning", y)
-y = bullet("Thesis: Deep learning approaches for anomaly detection in high-volume network traffic", y)
+y = bullet("GPA: 18.74 / 20", y)
+y = bullet("Thesis: Enhancing reliability in traffic forecasting by integrating spatio-temporal graph neural networks with Bayesian approaches", y)
 y -= 1.6 * mm
 c.setFillColor(DARK)
 c.setFont("Helvetica-Bold", 10)
-c.drawString(M, y, "B.Sc. in Computer Science - University of Isfahan")
+c.drawString(M, y, "B.Sc. in Statistics - Allameh Tabataba'i University (ATU), Tehran")
 c.setFillColor(GRAY)
 c.setFont("Helvetica", 8.8)
-c.drawRightString(W - M, y, "2019 - 2023")
+c.drawRightString(W - M, y, "Sep 2019 - Jul 2024")
 y -= 4.6 * mm
-y = bullet("Final project: real-time network traffic classification with ML", y)
+y = bullet("GPA: 15.98 / 20  |  Core coursework: statistical inference, regression analysis, data mining, machine learning", y)
 y -= 3 * mm
 
 # ---------------- Experience ----------------
 y = heading("Experience", y)
 c.setFillColor(DARK)
 c.setFont("Helvetica-Bold", 10)
-c.drawString(M, y, "Graduate Research Assistant - Data Science Lab, University of Tehran")
+c.drawString(M, y, "Teaching Assistant - Programming with R, Allameh Tabataba'i University")
 c.setFillColor(GRAY)
 c.setFont("Helvetica", 8.8)
-c.drawRightString(W - M, y, "2024 - Present")
+c.drawRightString(W - M, y, "Graduate studies")
 y -= 4.6 * mm
-y = bullet("Leading research on ML-based anomaly detection for network telemetry.", y)
-y = bullet("Co-authoring journal & conference papers; maintaining benchmark suite.", y)
-y -= 1.6 * mm
-c.setFillColor(DARK)
-c.setFont("Helvetica-Bold", 10)
-c.drawString(M, y, "Data Science Intern - Tech Startup, Tehran")
-c.setFillColor(GRAY)
-c.setFont("Helvetica", 8.8)
-c.drawRightString(W - M, y, "Summer 2023")
-y -= 4.6 * mm
-y = bullet("Built churn-prediction and reporting pipelines; automated KPI dashboards (-70% manual work).", y)
+y = bullet("Led hands-on R sessions and reviewed assignments for the Programming with R course.", y)
+y = bullet("Supported students with data manipulation, visualization, and statistical computing in R.", y)
 y -= 3 * mm
 
-# ---------------- Publications (sample) ----------------
-y = heading("Publications (sample)", y)
-y = bullet("Statistical and Deep Learning Approaches for Anomaly Detection in High-Frequency Network Traffic - under review, 2025.", y)
-y = bullet("LSTM-Based Sequential Modeling for Real-Time Intrusion Detection - CSICC, 2024.", y)
-y = bullet("Interpretable Time-Series Anomaly Scoring with Attention - arXiv preprint, 2024.", y)
+# ---------------- Selected Projects ----------------
+y = heading("Selected Projects", y)
+y = bullet("Time-Series Modeling & Forecasting - ARIMA/SARIMA selection, diagnostics, accuracy benchmarking (Dr. Salehirad, Jan 2024).", y)
+y = bullet("Hybrid SQL + NoSQL Database Architecture - workload-to-store mapping and cross-store query benchmarking (Dr. Shiri, Jan 2025).", y)
+y = bullet("Comprehensive Data Analysis - clustering & classification pipeline with missing-data handling (Dr. Rezaie Tabar, Feb 2025).", y)
+y = bullet("Bayesian Email Spam Detection - Multinomial Naive Bayes with TF-IDF features (Dr. Eskandari, Nov 2025).", y)
+y = bullet("Pistachio Image Classification - transfer learning with modern CNN architectures (Dr. Moein, Dec 2025).", y)
+y = bullet("Evolutionary vs. Swarm Algorithms - GA and PSO implemented from scratch and benchmarked (Dr. Shahbeik, Jan 2026).", y)
 y -= 3 * mm
 
 # ---------------- Skills ----------------
 y = heading("Skills", y)
-y = bullet("Languages & Core: Python, SQL, R, Bash, Git", y)
-y = bullet("ML / DL: scikit-learn, XGBoost, PyTorch, TensorFlow, LSTM, Anomaly Detection", y)
-y = bullet("Data & Viz: Pandas, NumPy, Plotly, Matplotlib, Streamlit, Jupyter", y)
-y = bullet("Tools: Linux, Docker, PostgreSQL, FastAPI, LaTeX", y)
+y = bullet("Programming & Databases: Python (Pandas, NumPy), R, SQL, SPSS, Git & GitHub, Jupyter", y)
+y = bullet("ML / DL: Scikit-learn, PyTorch, CNNs & transfer learning, ARIMA/SARIMA, Naive Bayes & ensembles", y)
+y = bullet("Statistics & Data Mining: inference, hypothesis testing, clustering & classification, feature engineering", y)
+y = bullet("Data Engineering & Viz: SQL/DBMS, MongoDB (NoSQL), missing-data handling, Matplotlib, Plotly, ggplot2", y)
+
+# ---------------- Certificates ----------------
+y = heading("Certificates", y)
+y = bullet("Machine Learning - Allameh Tabataba'i University", y)
+y = bullet("Data Mining - Allameh Tabataba'i University", y)
+y = bullet("Advanced Python - Sharif University of Technology (Maktabkhooneh)", y)
+
+# ---------------- Languages ----------------
+y = heading("Languages", y)
+y = bullet("Persian (native)  .  Azerbaijani Turkish (native)  .  English (professional working proficiency)", y)
 
 c.setFillColor(GRAY)
 c.setFont("Helvetica-Oblique", 7.6)
-c.drawCentredString(W / 2, 10 * mm, "Sample CV generated for template preview - replace content with real data.")
+c.drawCentredString(W / 2, 10 * mm, "farhadipour.com  -  hrfpour@gmail.com")
 
 c.save()
 print("CV saved:", OUT)

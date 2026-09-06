@@ -17,7 +17,16 @@ export function Contact() {
   const { t, tr, lang } = useLanguage();
   const [sending, setSending] = useState(false);
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  /*
+   * Real delivery on GitHub Pages (static hosting):
+   * the form posts to FormSubmit's free AJAX endpoint, which forwards
+   * every message straight to PROFILE.email. One-time activation:
+   * the very first submission emails an "Activate form" link to the
+   * inbox — after clicking it once, all future messages arrive as email.
+   */
+  const FORM_ENDPOINT = `https://formsubmit.co/ajax/${PROFILE.email}`;
+
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const form = e.currentTarget;
     const data = new FormData(form);
@@ -30,21 +39,39 @@ export function Contact() {
       toast.error(t("contact.errorRequired"));
       return;
     }
-
-    // Static-site friendly: compose the message into the visitor's email client.
-    const finalSubject = subject || `Website contact — ${name}`;
-    const body = `${message}\n\n———\n${name}\n${email}`;
-    const mailto = `mailto:${PROFILE.email}?subject=${encodeURIComponent(finalSubject)}&body=${encodeURIComponent(body)}`;
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      toast.error(t("contact.errorEmail"));
+      return;
+    }
 
     setSending(true);
-    window.location.href = mailto;
-    toast.success(t("contact.sentTitle"), {
-      description: t("contact.sentDesc"),
-    });
-    setTimeout(() => {
+    try {
+      const res = await fetch(FORM_ENDPOINT, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          name,
+          email,
+          subject: subject || `Website contact — ${name}`,
+          message,
+          _subject: `farhadipour.com — ${subject || `Message from ${name}`}`,
+          _template: "table",
+          _captcha: "false",
+          _honey: String(data.get("_honey") ?? ""),
+        }),
+      });
+      const json = (await res.json().catch(() => null)) as { success?: string } | null;
+      if (res.ok && json?.success === "true") {
+        toast.success(t("contact.sentTitle"), { description: t("contact.sentDesc") });
+        form.reset();
+      } else {
+        toast.error(t("contact.errorFailed"));
+      }
+    } catch {
+      toast.error(t("contact.errorFailed"));
+    } finally {
       setSending(false);
-      form.reset();
-    }, 1200);
+    }
   };
 
   const infoCards = [
@@ -126,6 +153,8 @@ export function Contact() {
             <Card className="border-border/70 bg-card/80 shadow-sm">
               <CardContent className="p-6 sm:p-8">
                 <form onSubmit={handleSubmit} className="space-y-5" noValidate>
+                  {/* Honeypot — invisible to humans, catches spam bots */}
+                  <input type="text" name="_honey" tabIndex={-1} autoComplete="off" className="hidden" aria-hidden="true" />
                   <div className="grid gap-5 sm:grid-cols-2">
                     <div className="space-y-2">
                       <Label htmlFor="contact-name">{t("contact.formName")} *</Label>
@@ -180,6 +209,7 @@ export function Contact() {
                     )}
                     {sending ? t("contact.sending") : t("contact.send")}
                   </Button>
+                  <p className="text-xs leading-relaxed text-muted-foreground">{t("contact.formNote")}</p>
                 </form>
               </CardContent>
             </Card>
